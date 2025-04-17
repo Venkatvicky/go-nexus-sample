@@ -7,7 +7,7 @@ pipeline {
 
     environment {
         PROJECT_NAME = 'go-nexus-sample'
-        NEXUS_URL = 'http://52.23.58.40:8081'
+        NEXUS_URL = 'http://54.221.89.237:8081'
         NEXUS_REPO = 'go-test'
         NEXUS_CREDENTIALS_ID = 'NEXUS-CRED' // Jenkins credentials ID for Nexus username + password (123456)
     }
