@@ -30,6 +30,7 @@ pipeline {
         stage(' Archive Go Artifact') {
             steps {
                 sh '''
+                    which zip || (sudo apt-get update && sudo apt-get install zip -y)
                     mkdir -p output
                     mv ${PROJECT_NAME} output/
                     cd output
